@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {RouterOutlet} from "@angular/router";
+import { NaoEncontradaComponent } from './nao-encontrada/nao-encontrada.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NaoEncontradaComponent
   ],
   imports: [
     BrowserModule,
