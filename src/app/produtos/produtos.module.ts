@@ -5,6 +5,7 @@ import { ProdutosRoutingModule } from './produtos-routing.module';
 import { ProdutosComponent } from './produtos.component';
 import {RouterLink} from "@angular/router";
 import { DetalhesProdutosComponent } from './detalhes-produtos/detalhes-produtos.component';
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { DetalhesProdutosComponent } from './detalhes-produtos/detalhes-produtos
     NgForOf,
     RouterLink,
     CurrencyPipe,
-    CurrencyPipe
+    CurrencyPipe,
+    FormsModule
   ]
 })
 export class ProdutosModule { }

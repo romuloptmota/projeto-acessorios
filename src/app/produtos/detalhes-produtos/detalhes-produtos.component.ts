@@ -10,6 +10,7 @@ import {ProdutosService} from "../../produtos.service";
 })
 export class DetalhesProdutosComponent implements OnInit{
   produto: IProduto | undefined; //undefided, lista de produto pode ser indefinido
+  quantidade = 1;
 
   constructor(private produtoService: ProdutosService, private route: ActivatedRoute) {
   }
