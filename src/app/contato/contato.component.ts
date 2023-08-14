@@ -37,4 +37,9 @@ export class ContatoComponent implements OnInit{
   ngOnInit() {
   }
 
+  enviarFormulario(){
+    alert("A mensagem foi enviada!");
+    this.fomContato.reset()
+  }
+
 }

@@ -1,6 +1,6 @@
 <h2 class="contact__title">Entre em contato</h2>
 <section class="contact__container">
-  <form class="contact-form" [formGroup]="fomContato">
+  <form class="contact-form" [formGroup]="fomContato" (ngSubmit)="enviarFormulario()">
 
     <input type="text" placeholder="Digite seu nome" formControlName="nome"
            [class.valid]="fomContato.controls['nome'].valid"
@@ -33,7 +33,7 @@
     </div>
 
 
-    <input type="tel" placeholder="(00) 0 0000-0000" formControlName="telefone"
+    <input type="tel" placeholder="Digite seu telefone" formControlName="telefone"
            [class.valid]="fomContato.controls['telefone'].valid"
            [class.invalid]="fomContato.controls['telefone'].invalid && (fomContato.controls['telefone'].touched ||
            fomContato.controls['telefone'].dirty)">
@@ -78,7 +78,7 @@
       </small>
     </div>
 
-    <button>Enviar</button>
+    <button [disabled]="fomContato.invalid" type="submit">Enviar</button>
 
   </form>
   <address>
