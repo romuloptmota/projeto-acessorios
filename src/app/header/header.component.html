@@ -6,11 +6,11 @@
   <div class="container-menu">
     <nav class="main-header__menu">
       <ul>
-        <li><a>Produtos</a></li>
-        <li><a>Carrinho</a></li>
-        <li><a>Contato</a></li>
+        <li><a routerLink="/produtos">Produtos</a></li>
+        <li><a routerLink="contato">Contato</a></li>
+        <li><a routerLink="carrinho">Carrinho</a></li>
         <li><a>
-          <i class="fa-solid fa-cart-shopping"></i>Carrinho
+          <i class="fa-solid fa-cart-shopping"></i>
           <span class="badge-carrinho">{{ carrinhoService.obtemCarrinnho().length }}</span>
         </a></li>
         <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
